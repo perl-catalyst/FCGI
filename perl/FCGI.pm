@@ -127,7 +127,7 @@ server know which port (and possibly server) your program
 is listening on.
 See remote.pl for an example.
 
-=item flags (default: 0)
+=item flags (default: FCGI::FAIL_ACCEPT_ON_INTR)
 
 Possible values:
 
