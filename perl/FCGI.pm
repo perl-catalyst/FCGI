@@ -2,7 +2,7 @@ package FCGI;
 use strict;
 
 BEGIN {
-    our $VERSION = '0.78';
+    our $VERSION = '0.79';
 
     require XSLoader;
     XSLoader::load(__PACKAGE__, $VERSION);
