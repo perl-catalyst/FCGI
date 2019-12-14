@@ -1,5 +1,8 @@
 Release history for FCGI
 
+  - Check socket path length in OS_CreateLocalIpcFd() and OS_FcgiConnect()
+  to avoid buffer overrun (Petr Písař, pull request #5)
+
 Version 0.78 --  2015-03-07
 
   - make copyright and license information more visible (RT#112535)
