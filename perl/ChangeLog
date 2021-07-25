@@ -1,5 +1,7 @@
 Release history for FCGI
 
+Version 0.79 --  2019-12-14
+
   - Check socket path length in OS_CreateLocalIpcFd() and OS_FcgiConnect()
   to avoid buffer overrun (Petr Písař, pull request #5)
   - Fix a memory leak in ProcessManagementRecord() (Petr Písař, pull request #4)
