@@ -13,4 +13,5 @@ MANIFEST			This list of files
 MANIFEST.SKIP
 README
 t/01-load.t
+t/02-unix_domain_socket.t
 typemap
