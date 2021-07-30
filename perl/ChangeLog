@@ -1,5 +1,8 @@
 Release history for FCGI
 
+  - Add dependency to FCGI::Client 0.09 because not depend on Any::Moose,
+  which is deprecated.
+
 Version 0.80 --  2021-07-24
 
   - Add test for FCGI over unix domain socket (Michal Josef Špaček, PR #6)
