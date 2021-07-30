@@ -1,7 +1,8 @@
 Release history for FCGI
 
-  - Add dependency to FCGI::Client 0.09 because not depend on Any::Moose,
-  which is deprecated.
+  - Add dependency to FCGI::Client 0.09 so as to not depend on Any::Moose,
+  which is deprecated. (Michal Josef Špaček, PR #7)
+  - fix test failures on MSWin32 ((Michal Josef Špaček, PR #8)
 
 Version 0.80 --  2021-07-24
 
