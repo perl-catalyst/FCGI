@@ -1,5 +1,9 @@
 Release history for FCGI
 
+Version 0.82 --  2021-07-31
+
+  - fix failing skip tests on MSWin32
+
 Version 0.81 --  2021-07-31
 
   - Add dependency to FCGI::Client 0.09 so as to not depend on Any::Moose,
