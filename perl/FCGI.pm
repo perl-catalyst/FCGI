@@ -9,6 +9,7 @@ BEGIN {
 }
 
 sub FAIL_ACCEPT_ON_INTR () { 1 };
+sub NEXT_ON_MULTIPLEX () { 2 };
 
 sub Request(;***$*$) {
     my @defaults = (\*STDIN, \*STDOUT, \*STDERR, \%ENV, 0, FAIL_ACCEPT_ON_INTR);
@@ -137,6 +138,13 @@ Possible values:
 
 If set, Accept will fail if interrupted.
 It not set, it will just keep on waiting.
+
+=back
+
+=item FCGI::NEXT_ON_MULTIPLEX
+
+If set, do not wait message with current requestId, start processing next request
+It not set, wait finishing current request with correct requestId - this can produce lot of 500 errors with IIS
 
 =back
 

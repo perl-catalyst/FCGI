@@ -82,6 +82,7 @@ typedef char **FCGX_ParamArray;
  * restarting upon being interrupted.
  */
 #define FCGI_FAIL_ACCEPT_ON_INTR	1
+#define NEXT_ON_MULTIPLEX	2
 
 /*
  * FCGX_Request -- State associated with a request.
