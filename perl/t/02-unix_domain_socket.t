@@ -28,15 +28,7 @@ if ($ENV{PERL_CORE} and $Config{'extensions'} !~ /\bSocket\b/) {
 } elsif (! $can_fork) {
     plan skip_all => 'no fork';
 } elsif ($^O eq 'MSWin32') {
-    if ($ENV{CONTINUOUS_INTEGRATION}) {
-        # https://github.com/Perl/perl5/issues/17429
-        plan skip_all => 'Skipping on Windows CI';
-    } else {
-        # https://github.com/Perl/perl5/issues/17575
-        if (! eval { socket(my $sock, PF_UNIX, SOCK_STREAM, 0) }) {
-            plan skip_all => "AF_UNIX unavailable or disabled on this platform"
-        }
-    }
+    plan skip_all => "FCGI with UNIX domain sockets not implemented on $^O";
 }
 
 my (undef, $unix_socket_file) = tempfile();
