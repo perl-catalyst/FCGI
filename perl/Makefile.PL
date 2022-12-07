@@ -142,6 +142,7 @@ WriteMakefile(
         'FCGI::Client' => 0.09,
         'File::Temp' => 0,
         'IO::Socket' => 0,
+        'IO::Socket::IP' => 0,
         'Test::More' => 0,
     },
     @extras,
