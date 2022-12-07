@@ -14,4 +14,5 @@ MANIFEST.SKIP
 README
 t/01-load.t
 t/02-unix_domain_socket.t
+t/03-network_socket.t
 typemap
